@@ -11,8 +11,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(disposable);
 
-	let au = vscode.commands.registerCommand('youtubed.addUrl', addUrl)
-	
+	let au = vscode.commands.registerCommand('youtubed.addUrl', addUrl);
 }
 
 // This method is called when your extension is deactivated
