@@ -1,16 +1,23 @@
 import * as vscode from 'vscode';
+import { saveUrl } from './saveUrl';
 
 export const addUrl = async() => {
-    const searchQuery = await vscode.window.showInputBox({
+    vscode.window.showInputBox({
         placeHolder: "Enter youtube link",
         prompt: "Add your youtube link",
-        // value: ''
-      });
-      if (searchQuery !== undefined)
-        vscode.window.showInformationMessage(searchQuery);
-    //   return searchQuery
-    //   if(searchQuery === ''){
-    //     console.log(searchQuery);
-    //     vscode.window.showErrorMessage('A search query is mandatory to execute this action');
-    //   }
+      }).then(url => {
+        if (url !== undefined){
+            vscode.window.showInformationMessage(url);
+            saveUrl(url)
+        }
+        if(url === ''){
+            console.log(url);
+            vscode.window.showErrorMessage('A search query is mandatory to execute this action');
+        }
+      })
+      
+
+   
+
+
 }
