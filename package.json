@@ -22,6 +22,10 @@
       {
         "command": "youtubed.addUrl",
         "title": "YouTubed:Add URL"
+      },
+      {
+        "command": "youtubed.openUrl",
+        "title": "YouTubed:Open URL"
       }
     ]
   },
