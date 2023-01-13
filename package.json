@@ -18,6 +18,10 @@
       {
         "command": "youtubed.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command" : "youtubed.addUrl",
+        "title" : "Add URL"
       }
     ]
   },
