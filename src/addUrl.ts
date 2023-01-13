@@ -15,9 +15,4 @@ export const addUrl = async() => {
             vscode.window.showErrorMessage('A search query is mandatory to execute this action');
         }
       })
-      
-
-   
-
-
 }
